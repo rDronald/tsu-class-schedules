@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="/css/mainPage.css" rel="stylesheet">
+</head>
+<body>
+
+<header th:insert="block/header :: header"></header>
+
+<div class="container" style="display: flex; flex-direction: column; width: max-content; margin: auto;">
+    <form method="get">
+        <button type="button" class="btn btn-warning mb-4">
+            Расписание студентов
+        </button>
+    </form>
+    <form method="get">
+        <button type="button" class="btn btn-warning">
+            Расписание преподавателей
+        </button>
+    </form>
+</div>
+
+<footer th:insert="block/footer :: footer"></footer>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.rdronald.tsuclassschedules;
+package com.rdronald.front;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

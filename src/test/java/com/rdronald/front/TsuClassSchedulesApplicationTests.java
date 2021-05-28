@@ -1,4 +1,4 @@
-package com.rdronald.tsuclassschedules;
+package com.rdronald.front;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
