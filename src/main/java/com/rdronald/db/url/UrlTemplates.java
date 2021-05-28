@@ -10,6 +10,7 @@ public final class UrlTemplates {
 
     public static final String PATH_GROUPS = "src/main/resources/static/json/groups.json";
 
-    public static final String URL_TSU_SCHEDULE = "https://www.tltsu.ru/upravlenie/educational-methodical-management" +
+    public static final String URL_TSU = "https://www.tltsu.ru";
+    public static final String URL_TSU_SCHEDULE = URL_TSU + "/upravlenie/educational-methodical-management" +
             "/schedule/schedule-training-sessions-students-full-time-tuition/";
 }

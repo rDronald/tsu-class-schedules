@@ -15,6 +15,6 @@ import java.time.LocalDate;
 public class Lesson {
     @Id
     private String id;
-    private LocalDate date;
+    private Integer number;
     private String description;
 }
