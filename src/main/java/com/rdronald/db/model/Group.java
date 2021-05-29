@@ -1,20 +1,15 @@
 package com.rdronald.db.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Data
+@Getter
 @AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "groups")
-public class Group {
-    @Id
-    private String id;
-    private String name;
+public enum Group {
+    PMIM_2001A("ПМИм-2001а",Institute.IMPIT,Status.MASTER_DEGREE, 1);
+
+    private final String name;
+    private final Institute institute;
+    private final Status status;
+    private final Integer course;
 }

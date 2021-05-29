@@ -4,9 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -16,9 +14,10 @@ import java.time.LocalDate;
 public class Schedule {
     @Id
     private String id;
-    private LocalDate firstDayWeek;
-    private LocalDate lastDayWeek;
     @ManyToOne
+    private StudyWeek studyWeek;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "group_name")
     private Group group;
     @ManyToOne
     private Lesson lesson;

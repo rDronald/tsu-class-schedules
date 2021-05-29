@@ -12,10 +12,9 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Lesson {
+public class StudyWeek {
     @Id
-    private String id;
     private Integer number;
-    private String description;
-    private LocalDate date;
+    private LocalDate firstDay;
+    private LocalDate lastDay;
 }
