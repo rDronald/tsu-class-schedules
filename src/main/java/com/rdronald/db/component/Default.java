@@ -124,17 +124,13 @@ public class Default {
         Institute[] institutes = Institute.values();
         Iterable<StudyWeek> studyWeeks = studyWeekService.findAll();
 
-        for (StudyWeek studyWeek : studyWeeks) {
-            for (int i = 0; i < institutes.length; i++) {
-                String fileLink = getFileLink(html, institutes[i], studyWeek.getNumber());
+        for (Institute institute : institutes) {
+            for (StudyWeek studyWeek : studyWeeks) {
+                String fileLink = getFileLink(html, institute, studyWeek.getNumber());
 
                 if (fileLink == null) {
-                    System.out.println(studyWeek);
-                    System.out.println(institutes[i].getName());
-                } else {
-                    System.out.println(fileLink);
+                    continue;
                 }
-                System.out.println();
             }
         }
 
